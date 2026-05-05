@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Student Portal</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="timetable.html">Timetable</a> | 
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <h2>Part A: Basic Contact Form</h2>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" name="basicName"><br><br>
+        
+        <label>Email:</label><br>
+        <input type="email" name="basicEmail"><br><br>
+        
+        <label>Message:</label><br>
+        <textarea name="message" rows="4" cols="30"></textarea><br><br>
+        
+        <button type="submit">Submit Message</button>
+    </form>
+
+    <hr>
+
+    <h2>Part B: Registration Form</h2>
+    <form>
+        <table border="1" cellpadding="5">
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Courses:</td>
+                <td>
+                    <input type="checkbox" name="course" value="html"> HTML
+                    <input type="checkbox" name="course" value="css"> CSS
+                    <input type="checkbox" name="course" value="js"> JavaScript
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Register Now">
+    </form>
+</body>
+</html>
