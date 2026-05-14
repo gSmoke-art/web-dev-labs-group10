@@ -1,0 +1,43 @@
+/* Element selector */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Class selector */
+.section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+
+/* Group selector */
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+/* Descendant selector */
+section p {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ID selector */
+#header {
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+/* Extra styling for lists */
+ul li, ol li {
+    margin: 5px 0;
+}
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Simple Profile</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal (Document-Level) CSS -->
+    <style>
+        /* Navigation menu styling */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            background-color: #222;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: orange;
+        }
+
+        /* Section headings */
+        .section h2 {
+            color: darkblue;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header" class="section">
+        <h1 style="color: darkgreen;">Group10 web Dev</h1> <!-- inline CSS -->
+        <h3 style="font-style: italic;">Computer Systems & Networking</h3>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#routine">Daily Routine</a></li>
+        </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p class="text">
+            I am a first-year student learning programming, networking, and system design.
+        </p>
+
+        <img src="20250630183101_1.jpg" alt="profile"
+             style="border-radius: 10px;"> <!-- inline CSS -->
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Basic HTML</li>
+            <li>Basic CSS</li>
+            <li>Networking Basics</li>
+        </ul>
+    </section>
+
+    <!-- DAILY ROUTINE -->
+    <section id="routine" class="section">
+        <h2>Daily Routine</h2>
+        <ol>
+            <li>Wake up</li>
+            <li>Attend lectures</li>
+            <li>Practice coding</li>
+        </ol>
+    </section>
+
+</body>
+</html>
