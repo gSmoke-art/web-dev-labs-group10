@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4: Layout Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="fixed-header">
+        <h1>Lab 4: Layout Control in CSS</h1>
+    </header>
+
+    <nav class="sticky-nav">
+        <a href="#box-model">Box Model</a>
+        <a href="#positioning">Positioning</a>
+        <a href="#floats">Float & Clear</a>
+    </nav>
+
+    <div class="main-wrapper">
+
+        <main class="main-content">
+            
+            <section id="box-model">
+                <h2>Part 1: Box Model (Control of Space)</h2>
+                
+                <div class="box-model-card">
+                    <h3>Box One</h3>
+                    <p>This is the first box. It demonstrates how padding creates internal space, borders define the boundary, and margins separate it from the next box.</p>
+                </div>
+
+                <div class="box-model-card">
+                    <h3>Box Two</h3>
+                    <p>This is the second box. Notice the distinct gap between this card and the ones above and below it, managed entirely by vertical margins.</p>
+                </div>
+
+                <div class="box-model-card">
+                    <h3>Box Three</h3>
+                    <p>This is the third box. The background color fills the area up to the visible solid border, highlighting the internal padding space.</p>
+                </div>
+            </section>
+
+            <section id="positioning">
+                <h2>Part 2: Positioning (Breaking Normal Flow)</h2>
+                
+                <div class="relative-container">
+                    <span class="absolute-label">NEW</span>
+                    <h3>Product Feature</h3>
+                    <p>This container uses <code>position: relative</code>. Because of this, the "NEW" label inside it can use <code>position: absolute</code> to anchor itself precisely to the top-right corner of this box, rather than the viewport.</p>
+                </div>
+            </section>
+
+        </main>
+
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This sidebar is aligned to the right side of the screen using <code>float: right</code>. The main content column to the left is aligned using <code>float: left</code>.</p>
+            <p>Scroll down to see the sticky navigation freeze at the top of the viewport, and notice how the fixed header stays locked in place!</p>
+        </aside>
+
+    </div> <footer class="cleared-footer">
+        <p>&copy; 2026 Layout Control Lab. All rights reserved. Strictly styled without Flexbox or Grid.</p>
+    </footer>
+
+</body>
+</html>
